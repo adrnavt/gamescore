@@ -1,0 +1,61 @@
+<%# if current_user.rol == "admin" %>
+<% link_to "Ver todos los usuarios", users_path %>
+<br />
+<br />
+<%# end %>
+
+
+
+
+
+
+<fieldset>
+	<legend>About me</legend>
+	
+	Avatar image:<%= form.file_field :avatar %>
+  
+
+	<div class="ctrlHolder">
+		<div class="campo-forma">
+			<%= form.label :nombre, "Name" %>  
+			<%= form.text_field :nombre %>
+		</div>
+		<div class="campo-forma">
+			<%= form.label :apellido_p, "Last Names"  %>
+			<%= form.text_field :apellido_p %>
+		</div>
+		<div class="campo-forma">
+		<% form.label :apellido_m, "Apellido Materno" %>
+		<% form.text_field :apellido_m %>
+		</div>
+		
+		<div class="clear"></div>
+	</div>
+</fieldset>
+
+<br/>
+
+<fieldset>
+	<legend>Access Data</legend>
+	<div class="ctrlHolder">
+		<div class="campo-forma">
+			<%= form.label :username, "Username" %>  
+			<%= form.text_field :username%>
+		</div>
+		<div class="campo-forma">
+			<%= form.label :email, "Email" %>  
+			<%= form.text_field :email%>  
+		</div>
+		<div class="campo-forma">
+			<%= form.label :password, form.object.new_record? ? nil : "Change Password" %>
+			<%= form.password_field :password%>  
+		</div>
+		<div class="campo-forma">
+			<%= form.label :password_confirmation, "Password Confirmation" %>  
+			<%= form.password_field :password_confirmation%>  
+		</div>
+		<div class="clear"></div>
+	</div>
+</fieldset>
+
+

@@ -1,0 +1,53 @@
+<div id="columna_reviews">
+	<div id="title_reviews">LATEST PREVIEWS</div>
+	<div id="search_reviews"><% form_for @search do |f| %>
+    
+<%= f.text_field :titulo_or_subdescripcion_like, :placeholder => "Busqueda" %>
+
+<%= f.submit "Buscar"%>
+
+<% end %></div>
+	<% @previews.each do |preview| %>
+	<div id="contenedor_list_review">
+		<div id="imagen_review">
+			<%@imagen = Game.find_by_id(preview.game_id)%>
+  	        <%= link_to (image_tag @imagen.imagen_juego.url(:thumb)), @imagen %>
+		</div>
+		<div id="info_review">
+				<div class="tituloreview"><%=h preview.titulo %></div>
+				<div class="postedreview">Posted on: <%=h preview.created_at%></div><br />
+    			<div class="descripcionreview"><%=h preview.subdescripcion %></div>
+    			<div class="linkreadmore"><%= link_to 'Read full review...', preview %></div>
+			<% if admin? %> <%= link_to 'Edit', edit_preview_path(preview) %>
+			    <%= link_to 'Destroy', preview, :confirm => 'Are you sure?', :method => :delete %>
+			    <% end %>
+		</div>
+	</div>
+	<div id="separadorreviews"></div>
+	<% end %>
+<div class="gamescore_pagination">
+  <%= will_paginate @previews, :container => true, :prev_label => "<< Prev", :next_label => "Next >>" %>
+  </div>
+</div>
+<div id="columna_ads">
+	<div id="popular_reviews">
+		<div id="titulo">Avances Nuevos</div>
+    <%@avancespopulares = Preview.find(:all, :limit=> 4, :order=>"created_at DESC")%>
+    <%@avancespopulares.each do |avancespopular|%>
+    <div class="contenedor_der_latest">
+      <div id="img_noticia"> 
+          <%= link_to (image_tag avancespopular.img_preview.url(:thumb)),  avancespopular %>
+      </div>
+        <div id="der_latest_titulo" class="textotitulos">
+          <%= avancespopular.titulo%>
+        </div>
+      <div id="descripcion_not_der" class="textonormal"> 
+        <%= avancespopular.subdescripcion%> 
+      </div>
+  </div>
+    <%end%>
+    
+  </div>	
+  <div id="swf267"><%=link_to (image_tag "bannergameplanet.jpg", :alt=>"gameplanet.com"), "http://www.gameplanet.com", :target=>"_blank" %></div>
+</div>
+<div class="clear"></div>

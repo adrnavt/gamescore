@@ -1,0 +1,22 @@
+class CreateGames < ActiveRecord::Migration
+  def self.up
+    create_table :games do |t|
+      t.string :imagen_juego
+      t.string :nombre_juego
+      t.string :compania
+      t.string :distribuidor
+      t.string :genero
+      t.date :fecha_lanzamiento
+      t.string :esrb
+      t.string :consola
+      t.string :gamescore
+      t.integer :ratescore
+
+      t.timestamps
+    end
+  end
+
+  def self.down
+    drop_table :games
+  end
+end

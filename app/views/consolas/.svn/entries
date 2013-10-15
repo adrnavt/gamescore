@@ -1,0 +1,56 @@
+10
+
+dir
+0
+https://subversion.assembla.com/svn/gamescore/trunk/app/views/consolas
+https://subversion.assembla.com/svn/gamescore
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0eca7eaf-c4de-4cec-9789-b2cd8980bdf6
+
+edit.html.erb
+file
+
+
+
+add
+
+index.html.erb
+file
+
+
+
+add
+
+new.html.erb
+file
+
+
+
+add
+
+show.html.erb
+file
+
+
+
+add
+

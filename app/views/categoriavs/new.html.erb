@@ -1,0 +1,15 @@
+<h1>New categoriav</h1>
+
+<% form_for(@categoriav) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :categoria %><br />
+    <%= f.text_field :categoria %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', categoriavs_path %>

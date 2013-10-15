@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  imagen_juego: MyString
+  nombre_juego: MyString
+  compania: MyString
+  distribuidor: MyString
+  genero: MyString
+  fecha_lanzamiento: 2011-03-29
+  esrb: MyString
+  consola: MyString
+  gamescore: MyString
+  ratescore: 1
+
+two:
+  imagen_juego: MyString
+  nombre_juego: MyString
+  compania: MyString
+  distribuidor: MyString
+  genero: MyString
+  fecha_lanzamiento: 2011-03-29
+  esrb: MyString
+  consola: MyString
+  gamescore: MyString
+  ratescore: 1

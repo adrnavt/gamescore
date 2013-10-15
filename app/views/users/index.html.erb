@@ -1,0 +1,28 @@
+
+		<h1>Control de usuarios</h1>
+		<% if current_user.rol == "admin" %>
+		<%= link_to "Nuevo usuario", new_user_path %>
+		<% end %>
+		<%= will_paginate @users, :container => true, :prev_label => "< Anterior", :next_label => "Siguiente >" %>
+		<table>
+		  <tr>
+		  	<th>Avatar</th>
+		    <th>Nombre</th>
+			<th>Username</th>
+		    <th>Correo</th>
+		 	<th>Rol</th>
+			<th>Opciones</th>
+		  </tr>
+
+			<% @users.each do |user| %>
+		  <tr>
+		  	<td><%= link_to (image_tag user.avatar.url(:thumb)), user %></td>
+		    <td><%=h user.apellido_p %> <%=h user.apellido_m %>, <%=h user.nombre %></td>
+		 	<td><%=h user.username %></td>
+		    <td><%=h user.email %></td>
+			<td><%=h user.rol %></td>
+		    <td><%= link_to 'Show', user %> || <%= link_to 'Edit', edit_user_path(user) %> || <%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>
+		  </tr>
+		<% end %>
+		</table>
+	

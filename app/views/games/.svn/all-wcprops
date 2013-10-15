@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/gamescore/!svn/ver/27/trunk/app/views/games
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/gamescore/!svn/ver/27/trunk/app/views/games/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/gamescore/!svn/ver/27/trunk/app/views/games/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/gamescore/!svn/ver/27/trunk/app/views/games/new.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/gamescore/!svn/ver/27/trunk/app/views/games/show.html.erb
+END

@@ -1,0 +1,140 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>..::GAMESCORE::..</title>
+    <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAAAAAAAD5Q7t/AAACsElEQVQ4y6WTy2tTeRTHP7+b5OZxb5KmuSamtcaOqX3gG6uizvhCRFQYBkZRRPduZufKwT9AQUV8IK4FEXTXGQbGjaa1DFXw3RCKptZWTBNvmkeTm3t/rqZBRkWYszoc+H74cDgH/meJLw1N05TZbJZMJgM4bBjcSE+qR3wXIJ1Oy+Hh+7hdPoLhGHOlGj6flx07t9Df94P4JmBoaEjeuXObrq71hKMDSEWhVnd4PVmjXDT5ef9y9uxeSSSiL+Tc/zajow/llSuX8XkHeD0dpzj+gNmZMeZrFaLJddQDuzh55g3H0tPk8yVpGCGxACiXy/L8+bN4PUv5UOmlrsww/NclirMmbp9Gc+RvklsL0HuaC9ee0Jt6smCtAORybygWqjRkDyLaScWaoZjPYyzfwNpffkfvXEOxVKPaJmFgFReuF8hmP8gFg6mptwS0BJPlGIElISylE6/Hhfn2GXOpjaQOn6OopnhfUaGvyfg/UV6MV1sGjm3j12PYehA1LEgN7uano6dQVRfjf16kMHKDmFYnuSxGsMsHKwxys6K1RE3TCEUsfFaAkObCaAsyePAEwiUZ++MmuZFbhDU3/cevEtIjjH1sUnU3WgaJRAfRdg+L4n6iRpzSxAh3z57EFgrbjvyGogjMyacsVnP0JT0YYQ/PpiZaBvHFCbri7yj5BRUtiKUKXo7eIzeRYeX2AziOpFav02jazNcsYt4C9YbVMtB1XXR3L2NtoklHoMqSVZvY++sxqBV5dPc6ic4Ea/YcotSMYM1MsW+FzeEfk/+9xMyr5xJfO3lPjOnCNI/T9/iYf0d3/2oSfZuRTT9Gs0CHbhNvDxBbZIjPAKZpSrsxj6OoEGqj4QLLAbcCqg1+q45slHFwEW6LiK9+Y6U8J6WUKG43IHAcBxwHlwC/Hvws8wm8ZwjsyYjzCgAAAABJRU5ErkJggg==" rel="icon" type="image/x-icon" />
+<%= stylesheet_link_tag "gamescore", "slideshow", "pagination.css", "menu_style"%>
+<%= javascript_include_tag "jquerytools.js" %>
+<%= javascript_include_tag :defaults %>
+  <%= ajaxful_rating_style %>
+<%= yield(:head) %>
+    </head>
+ <div class="linea_arriba shadow"></div>
+    <div id="contenedor_general">
+        <div id="headerlogin">
+            <div align="center" id="logo">
+            	<%=link_to (image_tag "logo.png",:size=>"193x65", :alt=>"Gamescore logo"),root_path%>
+            	</div>
+            <div id="login" class="textonormal">
+            <% if !current_user == nil?   %>
+			
+			Bienvenido:<%= current_user.username %> |
+				<%= link_to "Modificar mis datos.", edit_user_path(current_user) %> | 
+					
+						
+		
+		<%= link_to image_tag("../images/singout.png"), salir_path, :class=>"nodecoration"  %>
+		<% else %>
+			<% form_for @user_session do |f| -%>
+		  <%= f.error_messages %>
+			
+				
+				<%= f.text_field :username, :class=>"campotexto", :placeholder => "Username" %>
+			
+			
+				
+				<%= f.password_field :password, :class=>"campotexto", :placeholder => "Password" %>
+			 <%= f.submit "", :class=>"sign" %> 
+			 
+			<div id="loginabajo" ><%= link_to image_tag("../images/sign-up.png"), new_user_path, :class=>"nodecoration"  %>  ¿Olividaste tu contraseña?</div>
+  
+		<% end -%>		
+		<% end %>
+	</div>
+
+			
+		
+      </div>
+      <div id="espacioad"><%= image_tag "anunciate.png" %></div>
+    
+
+        <% flash.each do |name, msg| %>
+		    <%= content_tag :div, msg, :id => "flash_#{name}", :class=> "desaparece" %>
+		  <% end %>
+		<script>
+		  setTimeout(function(){
+		  $(".desaparece").fadeOut(1000, function () {
+		  $(".desaparece").remove();
+		      });
+
+		}, 1000);
+ 
+		  </script>
+		<style type="text/css" media="screen">
+			#flash_notice{background:green;}
+			#flash_error{background:red;}
+		</style>
+      <% if admin?%>
+      <div id="menu_admin">
+      <div class="menuadmin">
+        
+        
+<ul>
+<li><a href="" target="_self" >Usuarios</a>
+<ul>
+<li><%= link_to "Ver usuarios", users_path %></li>
+<li><%= link_to "Modificar mis datos", edit_user_path(current_user) %></li>
+<li><%= link_to "Nuevo usuario", new_user_path %></li>
+</ul>
+</li>
+<li><a href="" target="_self" >Banners</a>
+<ul>
+<li><%= link_to "Ver Banners", banners_path %></li>
+<li><%= link_to "Crear Banner", new_banner_path %></li>
+</ul>
+</li>
+<li><a href="" target="_self" >Games</a>
+<ul>
+<li><%= link_to "Ver Juegos", games_path %></li>
+<li><%= link_to "Crear juego", new_game_path %></li>
+</ul>
+</li>
+<li><a href="" target="_self" >Videos</a> 
+<ul>
+<li><%= link_to "Ver Videos", videos_path %></li> 
+<li><%= link_to "Crear Videos", new_video_path %></li> 
+</ul>
+</li>
+</ul>
+</div>
+      </div>
+        <%end%>
+        <div id="menu">
+        	<div id="menu_prin">
+            <div id="consolas"><%=image_tag "/images/ps3.png", :alt=>"Wii" %> ps3</div>
+        		<div id="consolas"><%=image_tag "/images/wii.png", :alt=>"Wii" %> Wii</div>
+        		<div id="consolas"><%=image_tag "/images/xbox.png", :alt=>"Xbox 360" %> Xbox 360</div>
+        	</div>
+        	<div class="menu_secu">
+        		<ul >
+        			<li><%= link_to "FOROS", forums_path, :class=> "nodecoration" %></li>
+        			<li><%= link_to "AVANCES", previews_path, :class=> "nodecoration"  %></li>
+        			<li><%= link_to "RESEÑAS", reviews_path, :class=> "nodecoration"  %></li>
+        			<li><%= link_to "VIDEOS", videos_path, :class=> "nodecoration"  %></li>
+        			<li><%= link_to "LANZAMIENTOS", newreleases_path, :class=> "nodecoration"  %></li>
+        			<li><%= link_to "DESCARGAS", construccion_path, :class=> "nodecoration"  %></li>
+        			<li><%= link_to "NOTICIAS", noticias_path, :class=> "nodecoration"  %></li>
+        			<li><%= link_to "GALERIAS", construccion_path, :class=> "nodecoration"  %></li>
+        	
+        		</ul>
+        	</div>
+        	<div class"clear"></div>
+        </div>
+	  <div id="contenido">
+		<%= yield %>
+	</div>
+	 <div id="piepagina">
+      <div id="contenedorpie" class="textonormal">
+          <div align="center" class="pie_menus">HOME | PS3 | <%= link_to "FOROS", forums_path, :class=> "nodecoration" %> | <%= link_to "AVANCES", previews_path, :class=> "nodecoration"  %> | REVIEWS | VIDEOS | DOWNLOADS | NEWS | GALLERIES </div>
+          <div id="follow_logo_copyright">
+              <div id="follow" class="textonormal">FOLLOW US IN:  <img src="/images/facebook-logo-300x300.png" width="20" height="20" alt="Facebook" /> Facebook | <img src="/images/twitter-logo.png" width="20" height="20" alt="Twitter" /> Twitter</div>
+              <div id="logopie"><span> </span><img src="/images/logo.png" width="119" height="40" /></div>
+            <div id="copyright" class="textonormal">Copyright © GAMESCORE.com, all rights reserved.</div>
+          </div>
+      </div>
+    </div>
+	
+</body>
+
+</html>

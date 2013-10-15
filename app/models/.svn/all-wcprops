@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/gamescore/!svn/ver/27/trunk/app/models
+END
+emailer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/gamescore/!svn/ver/27/trunk/app/models/emailer.rb
+END
+topic.rb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/gamescore/!svn/ver/19/trunk/app/models/topic.rb
+END
+user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/gamescore/!svn/ver/19/trunk/app/models/user.rb
+END
+review.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/gamescore/!svn/ver/27/trunk/app/models/review.rb
+END
+user_session.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/gamescore/!svn/ver/19/trunk/app/models/user_session.rb
+END
+mensaje.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/gamescore/!svn/ver/19/trunk/app/models/mensaje.rb
+END
+banner.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/gamescore/!svn/ver/27/trunk/app/models/banner.rb
+END
+post.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/gamescore/!svn/ver/19/trunk/app/models/post.rb
+END
+forum.rb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/gamescore/!svn/ver/19/trunk/app/models/forum.rb
+END
+game.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/gamescore/!svn/ver/27/trunk/app/models/game.rb
+END
+notifications.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/gamescore/!svn/ver/19/trunk/app/models/notifications.rb
+END

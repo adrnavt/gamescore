@@ -1,0 +1,75 @@
+
+<div class="columna_game">
+  <div id="titulo">GAME REVIEW FOR:</div>
+  <div class="titulo_game">
+    <%= @review.game.nombre_juego %>
+  </div>
+  <div class="img_caja">
+            <%@imagen = Game.find_by_id(@review.game_id)%>
+  	        <%= link_to (image_tag @imagen.imagen_juego.url(:thumb)), @imagen %>
+  </div>
+  <div class="infogame">
+    <ul>
+      <li>Company:<%= @review.game.compania %></li>
+  <li>Publisher:<%= @review.game.distribuidor %></li>
+  <li>Genre:<%= @review.game.genero %></li>
+  <li>Release date:<%= @review.game.fecha_lanzamiento %></li>
+  <li>ESRB:<%= @review.game.esrb %></li></br>
+</ul> 
+</div>
+</div>
+              
+              <div class="columna_rev">
+                <div id="title_reviews"> <%=h @review.titulo %></div>                
+                <div id class="subdescripcion">    
+                </br>
+                <% @videos =  @review.game.videos.find(:all, :limit => 1, :conditions => {:categoriav_id => "2"})%>
+                <% for video in @videos %>
+                <%= video.url%>
+                <%end%>
+  <%=h @review.subdescripcion %> </br>
+  </br>
+</div>
+	<div id="separadorreviews"></div>
+
+
+<div class="texto_review">
+  <%=h @review.reviewp1 %>
+</div>
+  
+  <div id="img_rev">
+    <div class="img_margin">
+  <%= image_tag @review.img_review1.url(:large) %>
+</div>
+</div>
+
+<div class="texto_review">
+  <%=h @review.reviewp2 %>
+</div>
+
+<div id="img_rev">
+    <div class="img_margin">
+  <%= image_tag @review.img_review2.url(:large) %>
+</div>
+</div>
+
+<div class="texto_review">
+  <%=h @review.reviewp3 %>
+</div>
+
+<div  class="autor">
+                Created by:
+  <%=h @review.autor %>, posted at <%= @review.created_at %>
+</div>
+
+
+<% link_to 'Edit', edit_review_path(@review) %> 
+<% link_to 'Back', reviews_path %>
+              </div>
+              <div class="columna_ads2">
+                <div id="popular_reviews2">
+                <div id="titulo">Reseñas Parecidas</div>
+              </div>
+               <div id="swf215"><%= image_tag "banner215.png" %></div>
+              </div>                
+              <div class="clear"></div>

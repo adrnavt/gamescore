@@ -1,0 +1,90 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>..::GAMESCORE::..</title>
+    <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAAAAAAAD5Q7t/AAACsElEQVQ4y6WTy2tTeRTHP7+b5OZxb5KmuSamtcaOqX3gG6uizvhCRFQYBkZRRPduZufKwT9AQUV8IK4FEXTXGQbGjaa1DFXw3RCKptZWTBNvmkeTm3t/rqZBRkWYszoc+H74cDgH/meJLw1N05TZbJZMJgM4bBjcSE+qR3wXIJ1Oy+Hh+7hdPoLhGHOlGj6flx07t9Df94P4JmBoaEjeuXObrq71hKMDSEWhVnd4PVmjXDT5ef9y9uxeSSSiL+Tc/zajow/llSuX8XkHeD0dpzj+gNmZMeZrFaLJddQDuzh55g3H0tPk8yVpGCGxACiXy/L8+bN4PUv5UOmlrsww/NclirMmbp9Gc+RvklsL0HuaC9ee0Jt6smCtAORybygWqjRkDyLaScWaoZjPYyzfwNpffkfvXEOxVKPaJmFgFReuF8hmP8gFg6mptwS0BJPlGIElISylE6/Hhfn2GXOpjaQOn6OopnhfUaGvyfg/UV6MV1sGjm3j12PYehA1LEgN7uano6dQVRfjf16kMHKDmFYnuSxGsMsHKwxys6K1RE3TCEUsfFaAkObCaAsyePAEwiUZ++MmuZFbhDU3/cevEtIjjH1sUnU3WgaJRAfRdg+L4n6iRpzSxAh3z57EFgrbjvyGogjMyacsVnP0JT0YYQ/PpiZaBvHFCbri7yj5BRUtiKUKXo7eIzeRYeX2AziOpFav02jazNcsYt4C9YbVMtB1XXR3L2NtoklHoMqSVZvY++sxqBV5dPc6ic4Ea/YcotSMYM1MsW+FzeEfk/+9xMyr5xJfO3lPjOnCNI/T9/iYf0d3/2oSfZuRTT9Gs0CHbhNvDxBbZIjPAKZpSrsxj6OoEGqj4QLLAbcCqg1+q45slHFwEW6LiK9+Y6U8J6WUKG43IHAcBxwHlwC/Hvws8wm8ZwjsyYjzCgAAAABJRU5ErkJggg==" rel="icon" type="image/x-icon" />
+<%= stylesheet_link_tag "gamescore", "slideshow" %>
+<%= javascript_include_tag "jquerytools.js" %>
+    </head>
+ <div class="linea_arriba shadow"></div>
+    <div id="contenedor_general">
+        <div id="headerlogin">
+            <div align="center" id="logo">
+            	<%=link_to (image_tag "logo.png", :size=>"193x65", :alt=>"Gamescore logo"),root_path%>
+            	</div>
+            <div id="login" class="textonormal">
+            <% if !current_user == nil?   %>
+			
+			Bienvenido:<%= current_user.username %> |
+				<%= link_to "modificar mis datos", edit_user_path(current_user) %> |
+			<% if current_user.rol == "admin" %>
+			 
+					<%= link_to "Ver usuarios", users_path %> |
+					<%= link_to "Nuevo usuario", new_user_path %> |
+					<%= link_to "banner", new_banner_path %>
+			
+			<%end%>
+					
+						
+		<%= link_to "Cerrar sesion", salir_path %>
+		
+		<% else %>
+			<% form_for @user_session do |f| -%>
+		  <%= f.error_messages %>
+			
+				
+				<%= f.text_field :username, :class=>"campotexto", :placeholder => "Username" %>
+			
+			
+				
+				<%= f.password_field :password, :class=>"campotexto", :placeholder => "Password" %>
+			 <%= f.submit "", :class=>"sign" %> 
+			 
+			<div id="loginabajo" ><%= link_to image_tag("/images/sign-up.png"), new_user_path, :class=>"nodecoration"  %>  ¿Forgot your password?</div>
+  
+		<% end -%>		
+		<% end %>
+	</div>
+
+			
+		
+      </div>
+        <div id="espacioad"></div>
+        <div id="menu">
+        	<div id="menu_prin">
+        		<div id="consolas"><%=image_tag "/images/ps3.png", :alt=>"PS3" %> PS3</div>
+        		<div id="consolas"><%=image_tag "/images/wii.png", :alt=>"Wii" %> Wii</div>
+        		<div id="consolas"><%=image_tag "/images/xbox.png", :alt=>"Xbox 360" %> Xbox 360</div>
+        	</div>
+        	<div id="menu_secu">
+        		<ul >
+        			<li><%= link_to "FORUMS", forums_path, :class=> "nodecoration" %></li>
+        			<li>PREVIEWS</li>
+        			<li><%= link_to "REVIEWS", reviews_path, :class=> "nodecoration"  %></li>
+        			<li>VIDEOS</li>
+        			<li>NEW RELEASES</li>
+        			<li>DOWNLOADS</li>
+        			<li>NEWS</li>
+        			<li>GALLERIES</li>
+        		</ul>
+        	</div>
+        	<div class"clear"></div>
+        </div>
+	  <div id="contenido">
+		<%= yield %>
+	</div>
+	 <div id="piepagina">
+      <div id="contenedorpie" class="textonormal">
+          <div align="center" class="pie_menus">HOME | PS3 | FORUMS | PREVIEWS | REVIEWS | VIDEOS | DOWNLOADS | NEWS | GALLERIES </div>
+          <div id="follow_logo_copyright">
+              <div id="follow" class="textonormal">FOLLOW US IN:  <img src="/images/facebook-logo-300x300.png" width="20" height="20" alt="Facebook" /> Facebook | <img src="/images/twitter-logo.png" width="20" height="20" alt="Twitter" /> Twitter</div>
+              <div id="logopie"><span> </span><img src="/images/logo.png" width="119" height="40" /></div>
+            <div id="copyright" class="textonormal">Copyright © GAMESCORE.com, all rights reserved.</div>
+          </div>
+      </div>
+    </div>
+	
+</body>
+
+</html>

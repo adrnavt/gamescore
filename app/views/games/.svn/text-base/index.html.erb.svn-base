@@ -1,0 +1,39 @@
+<h1>Listing games</h1>
+
+<table>
+  <tr>
+    <th>Imagen juego</th>
+    <th>Nombre juego</th>
+    <th>Compania</th>
+    <th>Distribuidor</th>
+    <th>Genero</th>
+    <th>Fecha lanzamiento</th>
+    <th>Esrb</th>
+    <th>Consola</th>
+    <th>Gamescore</th>
+    <th>Ratescore</th>
+  </tr>
+
+<% @games.each do |game| %>
+  <tr>
+    <td><%=h (image_tag game.imagen_juego.url(:thumb)) %></td>
+    <td><%=h game.nombre_juego %></td>
+    <td><%=h game.compania %></td>
+    <td><%=h game.distribuidor %></td>
+    <td><%=h game.genero %></td>
+    <td><%=h game.fecha_lanzamiento %></td>
+    <td><%=h game.esrb %></td>
+    <td><%=h game.consola %></td>
+    <td><%=h game.gamescore %></td>
+    <td><%=h game.ratescore %></td>
+    <td><%= link_to 'Show', game %></td>
+    <td><%= link_to 'Edit', edit_game_path(game) %></td>
+    <td><%= link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete %></td>
+    
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New game', new_game_path %>

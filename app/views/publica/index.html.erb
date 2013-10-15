@@ -1,0 +1,95 @@
+
+<div class="columna_izq">
+                  <div id="latest_news">
+                      <div id="titulo">LATEST NEWS</div>
+                      <div id="contenedor_noticia">
+                          <div id="img_noticia"><img src="images/propuesta.jpg" width="70" height="52" /></div>
+                          <div id="titulo_noticia" class="textotitulos">Titulo de la noticia - 27 feb 2011</div>
+                          <div id="descripcion_noticia" class="textonormal">Aqui una pequeña descripcion de la noticia nueva.</div>
+                    
+                    </div>              
+                      <div class="clear"></div>
+                  </div>
+                  <div id="img">
+                      <div id="titulo">GET TO KNOW SCOREMETER</div>
+                      <div><a href="contruccion.html"><img class="nodecoration" src="images/propuesta.jpg" width="345" height="199" /></a></div>
+                  </div>
+  <div id="latest_downloads">
+                      <div id="titulo">LATEST DOWNLOADS</div>
+                    
+              <div class="clear"></div>
+                  </div>
+                <div id="trailer">
+                  <div id="titulo">WATCH THE NEW TRAILER: MORTAL KOMBAT</div>
+                  <iframe title="YouTube video player" width="344" height="225" src="http://www.youtube.com/embed/b-VMvbKVYYs" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="columna_der">
+                <div id="slider">
+                	                	
+ <% @banners = Banner.find(:all, :order=>"created_at DESC") %>
+<div class="images">
+	
+	<% for banner in @banners %>
+		<div><%= link_to (image_tag banner.imagen.url(:large)), banner.descripcion %> </div>
+	<% end %>
+</div>
+
+
+<!-- the tabs -->
+<div class="slidetabs">
+		<% for banner in @banners %>
+		<a href="#"><%= image_tag banner.imagen.url(:thumb) %></a>
+		<% end %>
+</div>
+
+<div class="clear"></div>
+
+
+
+<script language="JavaScript">
+$(function() {
+
+$(".slidetabs").tabs(".images > div", {
+	effect: 'fade',
+	fadeOutSpeed: 1000,
+	fadeInSpeed: 1000,
+	rotate: true
+}).slideshow({autoplay: true, interval: 3000});
+});
+</script>
+                	
+                	
+                </div>
+                <div id="topten"></div>
+                <div id="screenshots">
+                    <div id="titulo">CHECK OUT SOME OF THE NEWEST SCREENSHOTS</div>
+                    <div id="contenedorscreen">
+                      <div id="titulo_screen" class="textotitulos">Assasins Creed</div>
+                      <div id="img_screen"><img src="images/assassins_creed_1080_3.jpg" width="173" height="97" /></div>
+                      <div id="descripcion_screen">
+                          <label class="textotitulos">PS3</label><br />
+                          <label class="textonormal">Aqui una breve descripcion de los screenshots.</label>
+                      </div>
+                    </div>
+                    <div id="contenedorscreen">
+                      <div id="titulo_screen" class="textotitulos">Assasins Creed</div>
+                      <div id="img_screen"><img src="images/assassins_creed_1080_3.jpg" width="173" height="97" /></div>
+                      <div id="descripcion_screen">
+                          <label class="textotitulos">Wii</label>
+                          <br />
+                          <label class="textonormal">Aqui una breve descripcion de los screenshots.</label>
+                      </div>
+                    </div>
+                    <div id="contenedorscreen">
+                      <div id="titulo_screen" class="textotitulos">Assasins Creed</div>
+                      <div id="img_screen"><img src="images/assassins_creed_1080_3.jpg" width="173" height="97" /></div>
+                      <div id="descripcion_screen">
+                        <label class="textotitulos">Xbox 360</label><br />
+                          <label class="textonormal">Aqui una breve descripcion de los screenshots.</label>
+                      </div>
+                    </div>
+                </div>
+              </div>
+         <div class="clear"></div>
+</div>

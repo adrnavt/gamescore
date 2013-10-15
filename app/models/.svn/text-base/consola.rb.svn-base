@@ -1,0 +1,3 @@
+class Consola < ActiveRecord::Base
+	has_many :games, :dependent => :destroy
+end

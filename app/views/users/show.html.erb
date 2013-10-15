@@ -1,0 +1,21 @@
+<div id="columna_foros">
+  <div id="title_user"><%=h @user.username %>'s PROFILE</div>
+
+<div id="userprofile"><%= image_tag @user.avatar.url(:medium) %></div>
+<div id="userinfo">
+    <h3> Username: <%=h @user.username %></h3>
+  <h3> Name: <%=h @user.apellido_p %>, <%=h @user.nombre %></h3>
+
+  <h3> EMail: <%=h @user.email %></h3>
+</div>
+
+
+<div id="topics">   
+  <% @user.topics.each do |topic| %>  
+    <% link_to topic.name, topic_url(topic.forum_id) %>  
+  <% end %>  
+</div> 
+
+
+</div>
+<div class="clear"></div>

@@ -1,0 +1,10 @@
+<div id="columna_foros">
+  <div id="title_user">Edit your Information.</div>
+
+<% form_for @user, :url => user_path, :html => { :multipart => true } do |f| %> <%=
+	f.error_messages :header_message => "Please try again.", :message => "The following errors exists on the fields:" %> 
+	<%= render :partial => "form", :object => f %> 	
+	<%= f.submit "Update" %> 
+	<% end %>
+</div>
+<div class="clear"></div>

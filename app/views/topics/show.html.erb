@@ -1,0 +1,33 @@
+<div id="columna_foros">
+	<div id="espacioforo"><%= image_tag "forums.png", :alt=>"Gamesocore Forums"%></div>
+  
+	<div id="barra_foro">GAMESCORE FORUMS: TOPIC - <%= @topic.name %>   </div>
+  <div id="contenedor_foro">
+<% for post in @topic.posts %>
+<div id="postuser">
+  <div id="postinside">
+  	<span><%= link_to post.user.username, user_url(post.user) %><br />
+  	<%= link_to (image_tag post.user.avatar.url(:thumb)), user_url(post.user) %><br />
+  	Posted:<%= post.created_at%><br />
+  	 <% 	if !current_user.blank? && current_user.rol == "admin" or !current_user.blank? && current_user.id == post.user_id %>  	
+  	 
+  	 
+    <%= link_to "Delete", post, :confirm => 'Are you sute?', :method => :delete %><% end %> </span>
+  </div>
+  </div> 
+  <div id="posts">
+    <span> <%= post.content %> </span>
+  </div >
+ <% end %> 
+  
+  <div class="reply">
+<p>  
+  <% if !current_user.blank? %><%= link_to "Reply", "#{new_post_path}?topic=#{@topic.id}" %><% end %> |  
+  <% if admin? %><%= link_to "Destroy Topic", @topic, :confirm => 'Are you sure?', :method => :delete %><% end %> |  
+  <%= link_to "Return to Topics", forum_path(@topic.forum_id) %>  
+</p>   
+</div>
+	</div>
+	
+</div>
+<div class="clear"></div>

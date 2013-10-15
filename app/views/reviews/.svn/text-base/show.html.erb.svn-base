@@ -1,0 +1,46 @@
+<p>
+  <b>Titulo:</b>
+  <%=h @review.titulo %>
+</p>
+<p>
+  <b>Subdescripcion:</b>
+  <%=h @review.subdescripcion %>
+</p>
+
+
+
+<p>
+  <b>Reviewp1:</b>
+  <%=h @review.reviewp1 %>
+</p>
+
+<p>
+  <b>Img review1:</b>
+  <%= image_tag @review.img_review1.url(:large) %>
+<%= image_tag @review.img_review1.url(:thumb) %>
+</p>
+
+<p>
+  <b>Reviewp2:</b>
+  <%=h @review.reviewp2 %>
+</p>
+
+<p>
+  <b>Img review2:</b>
+  <%= image_tag @review.img_review2.url(:large) %>
+<%= image_tag @review.img_review2.url(:thumb) %>
+</p>
+
+<p>
+  <b>Reviewp3:</b>
+  <%=h @review.reviewp3 %>
+</p>
+
+<p>
+  <b>Game:</b>
+  <%=h @review.game_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_review_path(@review) %> |
+<%= link_to 'Back', reviews_path %>

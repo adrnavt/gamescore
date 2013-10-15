@@ -1,0 +1,66 @@
+<% content_for :head do %>
+<%= stylesheet_link_tag "videobox" %>
+<%= javascript_include_tag "mootools.js", "swfobject.js", "videobox.js" %>
+<% end %>
+<div id="columna_reviews">
+	<div id="title_reviews">VIDEOS MÁS RECIENTES</div>
+	<div id="search_reviews" class="textonormal"><% form_for @search do |f| %>
+    
+
+<%= f.text_field :titulo_video_or_descripcion_like, :placeholder => "Busqueda" %>
+
+
+<%= f.label :categoriav_id_equals, "Categoria:"%>
+<%= f.collection_select :categoriav_id_equals, Categoriav.all, :id, :categoria, :include_blank => true%>
+
+<%= f.submit "Find"%>
+
+<% end %></div>
+
+<% @videos.each do |video| %>
+  
+  <div id="contenedorvideo">
+    <div id="titulo">
+      <%=h video.titulo_video%>
+    </div>
+    <%= link_to (image_tag video.img_video.url(:medium)),  video.url, :rel=>"vidbox", :title=>"#{video.titulo_video}"  %>
+    <div class="descripcion_video"><%=h video.descripcion %></div>
+    <div class="type_video"><%= video.categoriav.categoria%></div>
+    <% if admin? %>
+    <%= link_to 'Show', video %> |
+    <%= link_to 'Edit', edit_video_path(video) %> |
+    <%= link_to 'Destroy', video, :confirm => 'Are you sure?', :method => :delete %>
+    <% end %>
+  </div>
+
+<% end %> 
+
+  <div class="clear"></div></br>
+  <div id="separadorreviews"></div>
+  <div class="gamescore_pagination">
+   <%= will_paginate @videos, :container => true, :prev_label => "<< Prev", :next_label => "Next >>" %>
+  </div>
+</div>
+
+<div id="columna_ads">
+	<div id="popular_reviews">
+		<div id="titulo">Videos Nuevos</div>
+    <%@videospopulares = Video.find(:all, :limit=> 4, :order=>"created_at DESC")%>
+    <%@videospopulares.each do |videopopular|%>
+    <div class="contenedor_der_latest">
+      <div id="img_noticia"> 
+          <%= link_to (image_tag videopopular.img_video.url(:thumb)),  videopopular.url, :rel=>"vidbox", :title=>"#{videopopular.titulo_video}"  %>
+      </div>
+        <div id="der_latest_titulo" class="textotitulos">
+          <%= videopopular.titulo_video%>
+        </div>
+      <div id="descripcion_not_der" class="textonormal"> 
+        <%= videopopular.descripcion%> 
+      </div>
+  </div>
+    <%end%>
+    
+  </div>	
+  <div id="swf267"><%=link_to (image_tag "bannergameplanet.jpg", :alt=>"gameplanet.com"), "http://www.gameplanet.com", :target=>"_blank" %></div>
+</div>
+<div class="clear"></div>

@@ -1,0 +1,54 @@
+
+<h1>Listing games</h1>
+<% form_for @search do |f| %>
+<p>
+<%= f.label :nombre_juego_like, "Name"%></br>
+<%= f.text_field :nombre_juego_like %>
+</p>
+<p>
+<%= f.label :consola_id_equals, "Categoria"%></br>
+<%= f.collection_select :consola_id_equals, Consola.all, :id, :nombre_consola, :include_blank => true %>
+</p>
+<p>
+<%= f.submit "Find"%></br>
+</p>
+<% end %>
+<table>
+  <tr>
+    <th>Imagen juego</th>
+    <th>Nombre juego</th>
+    <th>Compania</th>
+    <th>Distribuidor</th>
+    <th>Genero</th>
+    <th>Fecha lanzamiento</th>
+    <th>Esrb</th>
+    <th>Consola</th>
+    <th>Admin</th
+  </tr>
+
+<% @games.each do |game| %>
+  <tr>
+    <td><%=h (image_tag game.imagen_juego.url(:thumb)) %></td>
+    <td><%=h game.nombre_juego %></td>
+    <td><%=h game.compania %></td>
+    <td><%=h game.distribuidor %></td>
+    <td><%=h game.genero %></td>
+    <td><%=h game.fecha_lanzamiento %></td>
+    <td><%=h game.esrb %></td>
+<% if !game.consola.blank? %>
+    <td><%=h game.consola.nombre_consola %></td>
+<% else %>
+<td></td>
+<% end %>
+    <td> <%= link_to 'Show', game %> | <%= link_to 'Edit', edit_game_path(game) %> | <%= link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete %> </td>
+    
+    
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New game', new_game_path %>
+
+

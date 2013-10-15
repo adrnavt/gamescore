@@ -1,0 +1,41 @@
+<div id="columna_reviews">
+	<div id="title_reviews">LATEST REVIEWS</div>
+	<div id="search_reviews"></div>
+	<% @reviews.each do |review| %>
+	<div id="contenedor_list_review">
+		<div id="imagen_review">
+			<%@imagen = Game.find_by_id(review.game_id)%>
+  	        <%= link_to (image_tag @imagen.imagen_juego.url(:thumb)), @imagen %>
+		</div>
+		<div id="info_review">
+				<div class="tituloreview"><%=h review.titulo %></div>
+				<div class="postedreview">Posted on: <%=h review.created_at%></div><br />
+    			<div class="descripcionreview"><%=h review.subdescripcion %></div>
+    			<div class="linkreadmore"><%= link_to 'Read full review...', review %></div>
+			<% if admin? %> <%= link_to 'Edit', edit_review_path(review) %>
+			    <%= link_to 'Destroy', review, :confirm => 'Are you sure?', :method => :delete %>
+			    <% end %>
+		</div>
+	</div>
+	<div id="separadorreviews"></div>
+	<% end %>
+	<% if admin? %> <%= link_to 'New review', new_review_path %> <% end %>
+</div>
+<div id="columna_ads">
+	<div id="popular_reviews">
+		<div id="titulo">Most Popular Reviews</div>
+	</div>	
+</div>
+<div class="clear"></div>
+
+
+		
+
+
+
+ 
+  	 
+  
+
+
+

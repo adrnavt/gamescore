@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/gamescore/!svn/ver/19/trunk/config/initializers
+END
+inflections.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/gamescore/!svn/ver/19/trunk/config/initializers/inflections.rb
+END
+session_store.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/gamescore/!svn/ver/19/trunk/config/initializers/session_store.rb
+END
+cookie_verification_secret.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/gamescore/!svn/ver/19/trunk/config/initializers/cookie_verification_secret.rb
+END
+backtrace_silencers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/gamescore/!svn/ver/19/trunk/config/initializers/backtrace_silencers.rb
+END
+new_rails_defaults.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/gamescore/!svn/ver/19/trunk/config/initializers/new_rails_defaults.rb
+END
+mime_types.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/gamescore/!svn/ver/19/trunk/config/initializers/mime_types.rb
+END

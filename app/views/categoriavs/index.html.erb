@@ -1,0 +1,20 @@
+<h1>Listing categoriavs</h1>
+
+<table>
+  <tr>
+    <th>Categoria</th>
+  </tr>
+
+<% @categoriavs.each do |categoriav| %>
+  <tr>
+    <td><%=h categoriav.categoria %></td>
+    <td><%= link_to 'Show', categoriav %></td>
+    <td><%= link_to 'Edit', edit_categoriav_path(categoriav) %></td>
+    <td><%= link_to 'Destroy', categoriav, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New categoriav', new_categoriav_path %>

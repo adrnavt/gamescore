@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/gamescore/!svn/ver/27/trunk/app/views/publica
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/gamescore/!svn/ver/27/trunk/app/views/publica/index.html.erb
+END
+contacto.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/gamescore/!svn/ver/27/trunk/app/views/publica/contacto.html.erb
+END
+agradecimiento.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/gamescore/!svn/ver/27/trunk/app/views/publica/agradecimiento.html.erb
+END

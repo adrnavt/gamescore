@@ -1,0 +1,8 @@
+
+<h1>Nuevo usuario</h1>
+
+<% form_for @user, :html => {:multipart => true} do |f| %>
+	<%= f.error_messages :header_message => "Por favor intente nuevamente", :message => "Existen los siguientes errores en los campos de:" %>
+	<%= render :partial => "form", :object => f %>    
+	<%= f.submit "Guardar" %>
+<% end %>

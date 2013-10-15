@@ -1,0 +1,50 @@
+<p>
+  <b>Titulo:</b>
+  <%=h @preview.titulo_preview %>
+</p>
+<p>
+  <b>Subdescripcion:</b>
+  <%=h @preview.subdescripcion %>
+</p>
+
+
+
+<p>
+  <b>previewp1:</b>
+  <%=h @preview.previewp1 %>
+</p>
+
+<p>
+  <b>Img preview1:</b>
+  <%= image_tag @preview.img_preview1.url(:large) %>
+<%= image_tag @preview.img_preview1.url(:thumb) %>
+</p>
+
+<p>
+  <b>previewp2:</b>
+  <%=h @preview.previewp2 %>
+</p>
+
+<p>
+  <b>Img preview2:</b>
+  <%= image_tag @preview.img_preview2.url(:large) %>
+<%= image_tag @preview.img_preview2.url(:thumb) %>
+</p>
+
+<p>
+  <b>previewp3:</b>
+  <%=h @preview.previewp3 %>
+</p>
+
+<p>
+  <b>Game:</b>
+  <%=h @preview.game_id %>
+</p>
+ <p>
+  <b>Autor:</b>
+   <%= @preview.autor%>
+  </p>
+
+
+<%= link_to 'Edit', edit_preview_path(@preview) %> |
+<%= link_to 'Back', previews_path %>

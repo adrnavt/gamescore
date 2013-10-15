@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  titulo_video: MyString
+  img_video: MyString
+  descripcion: MyText
+  url: MyString
+  game_id: 1
+  categoriav_id: 1
+  consola_id: 1
+
+two:
+  titulo_video: MyString
+  img_video: MyString
+  descripcion: MyText
+  url: MyString
+  game_id: 1
+  categoriav_id: 1
+  consola_id: 1

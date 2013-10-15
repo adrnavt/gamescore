@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  titulo_preview: MyString
+  subdescripcion: MyString
+  previewp1: MyText
+  img_preview1: MyString
+  previewp2: MyText
+  img_preview2: MyString
+  previewp3: MyText
+  autor: MyString
+  game_id: 1
+
+two:
+  titulo_preview: MyString
+  subdescripcion: MyString
+  previewp1: MyText
+  img_preview1: MyString
+  previewp2: MyText
+  img_preview2: MyString
+  previewp3: MyText
+  autor: MyString
+  game_id: 1

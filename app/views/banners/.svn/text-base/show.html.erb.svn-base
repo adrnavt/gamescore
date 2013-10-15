@@ -1,0 +1,15 @@
+<%= image_tag @banner.imagen.url(:large)  %>
+
+<p>
+  <b>Titulo:</b>
+  <%=h @banner.titulo %>
+</p>
+
+<p>
+  <b>Descripcion:</b>
+  <%=h @banner.descripcion %>
+</p>
+
+
+<%= link_to 'Edit', edit_banner_path(@banner) %> |
+<%= link_to 'Back', banners_path %>

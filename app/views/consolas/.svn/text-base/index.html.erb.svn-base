@@ -1,0 +1,22 @@
+<h1>Listing consolas</h1>
+
+<table>
+  <tr>
+    <th>Nombre consola</th>
+    <th>Compania consola</th>
+  </tr>
+
+<% @consolas.each do |consola| %>
+  <tr>
+    <td><%=h consola.nombre_consola %></td>
+    <td><%=h consola.compania_consola %></td>
+    <td><%= link_to 'Show', consola %></td>
+    <td><%= link_to 'Edit', edit_consola_path(consola) %></td>
+    <td><%= link_to 'Destroy', consola, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New consola', new_consola_path %>

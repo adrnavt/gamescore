@@ -1,0 +1,97 @@
+10
+
+dir
+28
+https://subversion.assembla.com/svn/gamescore/trunk/app/views
+https://subversion.assembla.com/svn/gamescore
+
+
+
+2011-04-02T05:42:51.658341Z
+28
+gustavoglz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0eca7eaf-c4de-4cec-9789-b2cd8980bdf6
+
+publica
+dir
+
+consolas
+dir
+
+
+
+add
+
+rating
+dir
+
+reviews
+dir
+
+banners
+dir
+
+games
+dir
+
+layouts
+dir
+
+topics
+dir
+
+users
+dir
+
+releases
+dir
+
+
+
+add
+
+previews
+dir
+
+
+
+add
+
+user_sessions
+dir
+
+mensajes
+dir
+
+panel_usuario
+dir
+
+panel_admin
+dir
+
+posts
+dir
+
+notifications
+dir
+
+forums
+dir
+
+emailer
+dir
+

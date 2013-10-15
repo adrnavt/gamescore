@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nombre: MyString
+  imagen_juego: MyString
+  compania: MyString
+  distribuidor: MyString
+  consola: MyString
+  genero: MyString
+  score: 1
+  descripcion: MyText
+
+two:
+  nombre: MyString
+  imagen_juego: MyString
+  compania: MyString
+  distribuidor: MyString
+  consola: MyString
+  genero: MyString
+  score: 1
+  descripcion: MyText

@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/gamescore/!svn/ver/27/trunk/app/views/emailer
+END
+contact_email.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/gamescore/!svn/ver/27/trunk/app/views/emailer/contact_email.html.erb
+END

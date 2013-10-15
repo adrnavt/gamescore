@@ -1,0 +1,18 @@
+
+<h1> Nombre: <%=h @user.apellido_p %> <%=h @user.apellido_m %>, <%=h @user.nombre %></h1>
+<h3> Username: <%=h @user.username %></h3>
+<h3> Mail: <%=h @user.email %></h3>
+<h3> Rol: <%=h @user.rol %></h3>
+
+<% title 'user: ' + @user.username %>  
+<div id="topics">  
+  <strong>topics</strong>  
+  <% @user.topics.each do |topic| %>  
+    <%= link_to topic.name, topic_url(topic.forum_id) %>  
+  <% end %>  
+</div> 
+
+<%= image_tag @user.avatar.url(:large) %>
+<%= image_tag @user.avatar.url(:medium) %>
+<%= image_tag @user.avatar.url(:thumb) %>
+

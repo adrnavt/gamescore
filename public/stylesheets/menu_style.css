@@ -1,0 +1,86 @@
+.menuadmin{
+	border:none;
+	border:0px;
+	margin:0px;
+	padding:0px;
+	font: 67.5% impact;
+	font-size:16px;
+	font-weight:bold;
+	}
+.menuadmin ul{
+	background:#6c6d6d;
+	height:35px;
+	list-style:none;
+	margin:0;
+	padding:0;
+	}
+	.menuadmin li{
+		float:left;
+		padding:0px;
+		}
+	.menuadmin li a{
+		background:#6c6d6d url("../images/seperator.gif") bottom right no-repeat;
+		color:#fff;
+		display:block;
+		font-weight:normal;
+		line-height:35px;
+		margin:0px;
+		padding:0px 25px;
+		text-align:center;
+		text-decoration:none;
+		}
+		.menuadmin li a:hover, .menuadmin ul li:hover a{
+			background: #105CB6 url("../images/hover.gif") bottom center no-repeat;
+			color:#000;
+			text-decoration:none;
+      
+			}
+	.menuadmin li ul{
+		background:#6c6d6d;
+		display:none;
+		height:auto;
+		padding:0px;
+		margin:0px;
+		border:0px;
+		position:absolute;
+		width:225px;
+		z-index:200;
+		/*top:1em;
+		/*left:0;*/
+		}
+	.menuadmin li:hover ul{
+		display:block;
+		
+		}
+	.menuadmin li li {
+		background:url('../images/sub_sep.gif') bottom left no-repeat;
+		display:block;
+		float:none;
+		margin:0px;
+		padding:0px;
+		width:225px;
+		}
+	.menuadmin li:hover li a{
+		background:none;
+		
+		}
+	.menuadmin li ul a{
+		display:block;
+		height:35px;
+		font-size:12px;
+		font-style:normal;
+		margin:0px;
+		padding:0px 10px 0px 15px;
+		text-align:left;
+		}
+		.menuadmin li ul a:hover, .menuadmin li ul li:hover a{
+			background:#eee url('../images/hover_sub.gif') center left no-repeat;
+			border:0px;
+			color:#000;
+			text-decoration:none;
+			}
+	.menuadmin p{
+		clear:left;
+		}	
+
+		

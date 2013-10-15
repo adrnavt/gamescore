@@ -1,0 +1,86 @@
+class PreviewsController < ApplicationController
+  # GET /previews
+  # GET /previews.xml
+  def index
+    @previews = Preview.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @previews }
+    end
+  end
+
+  # GET /previews/1
+  # GET /previews/1.xml
+  def show
+    @preview = Preview.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @preview }
+    end
+  end
+
+  # GET /previews/new
+  # GET /previews/new.xml
+  def new
+    @game = Game.find(params[:game_id])
+    @preview = Preview.new
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.xml  { render :xml => @preview }
+    end
+  end
+
+  # GET /previews/1/edit
+  def edit
+    @preview = Preview.find(params[:id])
+  end
+
+  # POST /previews
+  # POST /previews.xml
+  def create
+    @game = Game.find(params[:game_id])
+    @preview = @game.previews.build(params[:review])
+    
+
+    respond_to do |format|
+      if @preview.save
+        format.html { redirect_to(@preview, :notice => 'Preview was successfully created.') }
+        format.xml  { render :xml => @preview, :status => :created, :location => @preview }
+      else
+        format.html { render :action => "new" }
+        format.xml  { render :xml => @preview.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # PUT /previews/1
+  # PUT /previews/1.xml
+  def update
+    @preview = Preview.find(params[:id])
+
+    respond_to do |format|
+      if @preview.update_attributes(params[:preview])
+        format.html { redirect_to(@preview, :notice => 'Preview was successfully updated.') }
+        format.xml  { head :ok }
+      else
+        format.html { render :action => "edit" }
+        format.xml  { render :xml => @preview.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /previews/1
+  # DELETE /previews/1.xml
+  def destroy
+    @preview = Preview.find(params[:id])
+    @preview.destroy
+
+    respond_to do |format|
+      format.html { redirect_to(previews_url) }
+      format.xml  { head :ok }
+    end
+  end
+end

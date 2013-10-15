@@ -1,0 +1,23 @@
+<div id="somos_col_izq">
+	<div class="fondo_titulo_seccion">
+		<h1>Entrar al sistema</h1>
+	</div>
+	
+	<div id="listado" class="sin">
+		<p>Por favor ingresa los siguientes datos:</p>
+		<% form_for @user_session do |f| -%>
+		  <%= f.error_messages %>
+			<p>
+				<%= f.label :username, "Usuario" %><br />
+				<%= f.text_field :username %>	
+			</p>
+			<p>
+				<%= f.label :password, "Password" %><br />
+				<%= f.password_field :password %>
+			</p>
+	</div>
+	<div id="barra-herramientas" class="abajo">
+			<%= f.submit "Aceptar" %> <a href="">¿Olvidaste tu contraseña?</a>
+		<% end -%>		
+	</div>
+</div>

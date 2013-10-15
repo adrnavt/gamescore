@@ -1,0 +1,45 @@
+<%# link_to "crear review", new_game_review_path(@game) %> || <%# link_to "crear preview", new_game_preview_path(@game) %> || <%# link_to "crear New release", new_game_newrelease_path(@game) %> 
+
+
+
+<p>
+  <%= image_tag @game.imagen_juego.url(:thumb) %>
+<p>
+  
+  <b>Nombre juego:</b>
+  <%=h @game.nombre_juego %>
+</p>
+
+<p>
+  <b>Compania:</b>
+  <%=h @game.compania %>
+</p>
+
+<p>
+  <b>Distribuidor:</b>
+  <%=h @game.distribuidor %>
+</p>
+
+<p>
+  <b>Genero:</b>
+  <%=h @game.genero %>
+</p>
+
+<p>
+  <b>Fecha lanzamiento:</b>
+  <%=h @game.fecha_lanzamiento %>
+</p>
+
+<p>
+  <b>ESRB:</b>
+  <%=h @game.esrb %>
+</p>
+
+<%= ratings_for @game %>
+
+#To display static stars:
+<%= ratings_for @game, :static %>
+
+#To display the ratings for a dimension:
+<%= ratings_for @game, :dimension => :score %>
+ 

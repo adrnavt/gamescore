@@ -1,0 +1,38 @@
+<h1>Listing noticias</h1>
+
+<table>
+  <tr>
+    <th>Titulo</th>
+    <th>Img noticia</th>
+    <th>Descripcion img</th>
+    <th>Autor</th>
+    <th>Lugar</th>
+    <th>Nota</th>
+    <th>Publisher</th>
+    <th>Consola</th>
+  </tr>
+<% @ultimas5 = Noticia.find(:all, :limit => 5, :order=> "created_at DESC")%>
+<% @ultimas5.each do |ultimanoticia| %>
+
+<%= link_to (image_tag ultimanoticia.img_noticia.url(:large)),ultimanoticia %>
+<%end%>
+<% @noticias.each do |noticia| %>
+  <tr>
+    <td><%=h noticia.titulo %></td>
+    <td><%=h noticia.img_noticia %></td>
+    <td><%=h noticia.descripcion_img %></td>
+    <td><%=h noticia.autor %></td>
+    <td><%=h noticia.lugar %></td>
+    <td><%=h noticia.nota %></td>
+    <td><%=h noticia.publisher %></td>
+    <td><%=h noticia.consola_id %></td>
+    <td><%= link_to 'Show', noticia %></td>
+    <td><%= link_to 'Edit', edit_noticia_path(noticia) %></td>
+    <td><%= link_to 'Destroy', noticia, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New noticia', new_noticia_path %>

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/gamescore/!svn/ver/27/trunk/app/helpers
+END
+publica_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/gamescore/!svn/ver/19/trunk/app/helpers/publica_helper.rb
+END
+topics_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/gamescore/!svn/ver/19/trunk/app/helpers/topics_helper.rb
+END
+application_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/gamescore/!svn/ver/23/trunk/app/helpers/application_helper.rb
+END
+rating_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/gamescore/!svn/ver/27/trunk/app/helpers/rating_helper.rb
+END
+reviews_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/gamescore/!svn/ver/27/trunk/app/helpers/reviews_helper.rb
+END
+mensajes_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/gamescore/!svn/ver/19/trunk/app/helpers/mensajes_helper.rb
+END
+panel_usuario_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/gamescore/!svn/ver/19/trunk/app/helpers/panel_usuario_helper.rb
+END
+panel_admin_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/gamescore/!svn/ver/19/trunk/app/helpers/panel_admin_helper.rb
+END
+banners_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/gamescore/!svn/ver/19/trunk/app/helpers/banners_helper.rb
+END
+posts_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/gamescore/!svn/ver/19/trunk/app/helpers/posts_helper.rb
+END
+forums_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/gamescore/!svn/ver/19/trunk/app/helpers/forums_helper.rb
+END
+games_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/gamescore/!svn/ver/27/trunk/app/helpers/games_helper.rb
+END
+layout_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/gamescore/!svn/ver/19/trunk/app/helpers/layout_helper.rb
+END

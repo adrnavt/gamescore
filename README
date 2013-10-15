@@ -1,0 +1,28 @@
+
+<% if !current_user == nil? %>
+
+<% if current_user == @empresa.user or current_user.rol == "empresario" or current_user.rol == "admin" %>
+
+	color:<%=h @empresa.color_fondo %>;
+	
+	
+	
+	
+	<% form_for @user_session, :html => {:id => "login", :class => "uniForm"} do |f| -%>
+	<fieldset>
+		<legend>Entrar al sistema</legend>
+		<div class="ctrlHolder">
+			<div id="campo-usuario" class="campo-forma">
+				<%= f.label :username, "Usuario" %>
+				<%= f.text_field :username, :class => "usuario" %>
+			</div>
+			<div class="campo-forma">
+				<%= f.label :password, "Password" %>
+				<%= f.password_field :password, :class => "password" %>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</fieldset>
+	<%= f.submit "Aceptar", :class => "submit-button"%>				
+	<% end -%>
+	

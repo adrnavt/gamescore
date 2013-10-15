@@ -1,0 +1,32 @@
+<h1>Editing mensaje</h1>
+
+<% form_for(@mensaje) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :asunto %><br />
+    <%= f.text_field :asunto %>
+  </p>
+  <p>
+    <%= f.label :contenido %><br />
+    <%= f.text_area :contenido %>
+  </p>
+  <p>
+    <%= f.label :telefono %><br />
+    <%= f.text_field :telefono %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @mensaje %> |
+<%= link_to 'Back', mensajes_path %>

@@ -1,0 +1,19 @@
+<div id="somos_col_izq">
+	<div class="fondo_titulo_seccion">
+	</div>
+	
+	<div id="listado" class="sin">
+		<% form_for @user_session do |f| -%>
+		  <%= f.error_messages %>
+			
+			
+				<%= f.text_field :username, :placeholder=>"Username", :class=>"campotexto" %>
+				<%= f.password_field :password, :placeholder=>"Password", :class=>"campotexto" %>
+				<%= f.submit "Aceptar" %>
+				
+	</div>
+	<div id="loginabajo">
+			<%=link_to (image_tag "sign-up.png", :alt=>"Register"),new_user_path %> <a href="">¿Olvidaste tu contraseña?</a>
+		<% end -%>		
+	</div>
+</div>

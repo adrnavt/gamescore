@@ -1,0 +1,14 @@
+<h1>New newrelease</h1>
+<%= @game.nombre_juego %>
+<% form_for [@game, @newrelease], :html => {:multipart => true} do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :descripcion %><br />
+    <%= f.text_area :descripcion %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', newreleases_path %>

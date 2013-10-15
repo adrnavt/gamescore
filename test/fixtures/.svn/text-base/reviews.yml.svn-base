@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  subdescripcion: MyText
+  titulo: MyString
+  reviewp1: MyText
+  img_review1: MyString
+  reviewp2: MyText
+  img_review2: MyText
+  reviewp3: MyText
+  game_id: 1
+
+two:
+  subdescripcion: MyText
+  titulo: MyString
+  reviewp1: MyText
+  img_review1: MyString
+  reviewp2: MyText
+  img_review2: MyText
+  reviewp3: MyText
+  game_id: 1

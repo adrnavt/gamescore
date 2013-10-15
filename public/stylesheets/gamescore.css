@@ -1,0 +1,775 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color:#000;
+	background-position:top center;
+	background-repeat:no-repeat;
+  background-image: url(../images/fondomarvel.jpg);
+	margin:0;
+	padding:0;
+	}
+.clear{
+	clear:both;}
+.linea_arriba{
+	width:100%;
+	height:36px;
+	background-color:#6c6b6b;
+	}
+#piepagina{
+	width:100%;
+	height:114px;
+	background-color:#6c6b6b;
+	}
+#contenedorpie{
+	margin:auto;
+	width:960px;
+	height:114px;
+	font-weight:bold;
+	}
+#slider{
+	height:344px;
+}
+.shadow {
+-moz-box-shadow: 0px 3px 0px #000;
+-webkit-box-shadow: 0px 3px 0px #000;
+box-shadow: 0px 3px 0px #000;
+-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+#contenedor_general{
+	width:960px;
+	height:auto;
+	margin:auto;
+	}
+#headerlogin{
+	height:77px;
+	background-image: url(../images/header.png);
+	}
+#logo{
+	width:240px;
+	height:auto;
+	margin-top:6px;
+	float:left;
+	border:none;
+	}
+#login{
+	width:334px;
+	float:right;
+	height:58px;
+	margin-top:10px;
+	color:#fff;
+	border-left:solid 1px white;
+}
+.sign{
+	background-image:url(../images/sign-in.png);
+	width:55px;
+	height:25px;
+}
+
+	#loginabajo{
+		width:auto;
+		height:27px;
+		margin-top:4px;
+		margin-left:10px;
+	}
+	.forgot{
+		width:150px;
+		height:20px;
+		color:#FFF;
+		text-decoration:none;
+		border-left:solid 1px #FFF;
+		float:left;
+	}
+	
+#espacioad{
+	height:189px;
+	}
+#menu{
+	height:50px;
+	background-image:url(../images/menuback.png);
+	}
+	.campotexto{
+		width:108px;
+		margin-left:10px;
+	}
+	#menu_prin{
+		width:361px;
+		height:50px;
+		float:left;
+		}
+		#consolas{
+			width:120px;
+			height:50px;
+			float:left;
+			text-align:center;
+			text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    color:#FFF;
+    font-family:Impact;
+		}
+	.menu_secu{
+		width:593px;
+		height:45px;
+		margin-top:5px;
+		margin-left:5px;
+		float:left;
+  }
+		.menu_secu ul{
+		list-style:none;
+		margin:0;
+		padding:0;
+		}
+.menu_secu ul li{
+	float:left;
+	margin:0 6px;
+	font-family:Impact;
+	font-size:14px;
+	color:white;
+	letter-spacing:1px;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+.menu_secu ul li a{color:white;}
+
+#contenido{
+	height:auto;
+	background-color:#FFF;
+	margin:0;
+	padding:0;
+	}
+	
+.columna_izq{
+	width:346px;
+	height:auto;
+	float:left;
+	margin-left:15px;
+	margin-top:20px;
+	margin-bottom:20px
+	}
+.columna_der{
+	width:561px;
+	height:auto;
+	float:right;
+	margin-right:15px;
+	margin-top:20px;
+	margin-bottom:20px
+	}
+	
+	#latest_news{ 
+	height:343px;
+	border:solid 1px #000;
+	background-color:#d9d7d8;
+	}
+	#latest_downloads{ 
+	height:282px;
+	border:solid 1px #000;
+	background-color:#d9d7d8;
+	margin-top:20px;
+	}
+	#contenedor_noticia{
+		height:52px;
+		width:328px;
+		float:left;
+		margin-top:10px;
+		margin-left:6px;
+		}
+			#img_noticia{
+				height:52px;
+				width:70px;
+				float:left;
+        border: 1px solid #000;
+				}
+			#titulo_noticia{
+				height:14px;
+				width:248px;
+				float:right;
+				text-align:left;
+				}
+			#descripcion_noticia{
+				height:auto;
+				width:248px;
+				margin-top:4px;
+				padding:0;
+				float:right;
+				text-align:justify;			
+				color:#000;
+				}
+	#slide{ 
+	
+	background-color:#fff;
+	}
+	#titulo{
+		background: url(../images/tituloventana.png) repeat-x;
+		height:23px;
+		text-align:left;
+		font-family: Impact;
+		font-size:14px;
+		padding-left:10px;
+		text-align:left;
+		color:#FFF;
+		}
+	#img{ 
+	height:auto;
+	border:solid 1px #000;
+	background-color:#d9d7d8;
+	margin-top:20px;
+	}
+
+#topten{
+	height:526px;
+	margin-top:20px;
+	border:solid 1px #000;
+	}
+.nodecoration{
+	border:none;
+	text-decoration:none;
+	}
+#contenedorcon{
+	width:auto;
+	height:auto;
+	background-color:#FFF;
+	}
+	
+#screenshots{
+	height:248px;
+	margin-top:20px;
+	border:solid 1px #000;
+	background-color:#d9d7d8;
+	}
+		#contenedorscreen{
+			width:173px;
+			float:left;
+			height:200px;
+			margin-left:10px;
+			margin-top:15px;
+			}
+		#titulo_screen{
+			height:20px;
+			text-align:center;
+			font-family:Impact;
+			font-size:14px;
+			color:#0e6af2;
+			}
+		#img_screen{
+			height:97px;
+			}
+		#descripcion_screen{
+			height:auto;
+			text-align:center;
+			}
+			
+#trailer{
+	height:248px;
+	margin-top:20px;
+	border:solid 1px #000;
+	background-color:#d9d7d8;
+	}
+	
+.pie_menus{
+	text-align:center;
+	height:20px;
+	padding-top:10px;
+	color:#FFF;
+	}
+  .pie_menus a{color:white;}
+  
+#follow_logo_copyright{
+	margin-top:44px;
+	height:40px;
+	}
+	#follow{
+		float:left;
+		width:360px;
+		height:20px;
+		color:#FFF;
+		}
+	#copyright{
+		float:right;
+		width:360px;
+		text-align:right;
+		height:12px;
+		padding-top:8px;
+		color:#FFF;
+		}
+	#logopie{
+		float:left;
+		width:240px;
+		text-align:center;
+		}
+	
+.textonormal{
+	font-family:arial;
+	font-size:12px;
+	}
+.textotitulos{
+	font-family:Impact;
+	font-size:14px;
+	color:#0e6af2;
+	}
+table tr th {background:#6c6b6b; color:#FFF; padding:0; border:#111 solid 1px; font-family:Arial; font-size:14px; font-weight:bold;}  
+table tr td {border:1px #000 solid; padding:5px;}  
+table tr td.rightright {background: #eee;}  
+table tr td h4 {margin:0; padding:0; font-family:Arial; font-size:16px; font-weight:bold; } 
+
+
+.post {width:100%; display:table;} 
+.post span {padding:5px; border:2px solid #000; margin:0;}  
+.post span.left {width:150px; background:#eee; border:3px solid #eee; display:table-cell;}  
+.post span.rightright { border:3px solid #eee; display:table-cell;}  
+                                                                       
+#header {width:75%; margin:0 auto;} 
+
+   /*             styles for the star rater                */    
+   .star-rating,
+.star-rating a:hover,
+.star-rating a:active,
+.star-rating a:focus,
+.star-rating .current-rating{
+background: url(‘../images/star_rating.gif’) left -1000px repeat-x;
+}
+.star-rating{
+position: relative;
+width: 150px;
+height: 30px;
+overflow: hidden;
+list-style: none;
+margin: 0;
+padding: 0;
+background-position: top left;
+}
+.star-rating li{
+display: inline;
+}
+.star-rating a,
+.star-rating .current-rating{
+position: absolute;
+top: 0;
+left: 0;
+text-indent: -1000em;
+height: 30px;
+line-height: 30px;
+outline: none;
+overflow: hidden;
+border: none;
+}
+.star-rating a:hover,
+.star-rating a:active,
+.star-rating a:focus{
+background-position: center left;
+}
+.star-rating a.one-stars{
+width: 20%;
+z-index: 6;
+}
+.star-rating a.two-stars{
+width: 40%;
+z-index: 5;
+}
+.star-rating a.three-stars{
+width: 60%;
+z-index: 4;
+}
+.star-rating a.four-stars{
+width: 80%;
+z-index: 3;
+}
+.star-rating a.five-stars{
+width: 100%;
+z-index: 2;
+}
+.star-rating .current-rating{
+z-index: 1;
+background-position: bottom left;
+}
+.star-ratings-block {
+font-size: .75em;
+text-align: center;
+width: 100%;
+}
+    
+    
+    
+/*rviews*/
+#columna_reviews{
+	width:636px;
+	height:auto;
+	float:left;
+	margin-left:15px;
+	margin-top:20px;
+	margin-bottom:20px;
+	border:solid 1px #000;
+	background:#d9d8d8;	
+}
+#title_reviews{
+	height:34px;
+	background: url(../images/tituloseccion.png) repeat-x;
+	text-align:left;
+	font-family: Impact;
+	font-size:18px;
+	padding:0 0 0 10px;
+	text-align:left;
+	color:#FFF;
+	}
+#search_reviews{
+	height:46px;
+	background:#6c6b6b;
+  text-align:center;
+  padding:15px 0 0 0;
+  color:#fff;
+	}
+#contenedor_list_review{
+	height:164px;
+	background:#d9d8d8;	
+}
+#separadorreviews{
+	height:8px;
+	background:url(../images/divisionreviews.png); 
+}
+
+#imagen_review{
+	width:100px;
+	height:auto;
+	margin-left:24px;
+	margin-top:25px;
+	float:left;
+}
+#info_review{
+	width:360px;
+	height:138px;
+	margin-left:20px;
+	margin-top:25px;
+	float:left;
+}
+
+#columna_ads{
+	width:267px;
+	height:auto;
+	float:right;
+	margin-right:15px;
+	margin-top:20px;
+	margin-bottom:20px
+}
+
+#columna_ads2{
+	width:277px;
+	height:auto;
+	float:right;
+	margin-right:15px;
+	margin-top:20px;
+	margin-bottom:20px
+}
+
+#popular_reviews{
+	height:284px;
+	background:#d9d8d8;	
+	border:1px solid #000;
+}
+.tituloreview{
+	color:#0e6af2;
+	font-family: Impact;
+	font-size:14px;
+}
+.postedreview{
+	color:#18347a;
+	font-family: Arial;
+	font-size:12px;
+}
+.descripcionreview{
+	color:#000;
+	font-family: Arial;
+	font-size:12px;
+	text-align:justify;
+}
+.linkreadmore{
+	color:#0e6af2;
+	font-family: arial;
+	font-size:12px;
+}
+.linkreadmore a{color:#0e6af2;}
+
+#paginate{
+	margin:auto;
+	width:150px;
+	height:20px;
+	text-align:center;
+	font-family:Impact;
+	color:#0e6af2;
+	font-size:14px;
+}
+
+.release{
+	color:#18347a;
+	font-family: Arial;
+	font-size:18px;
+}
+img
+{  border-style: none;
+}
+
+/*foros cosas*/
+#columna_foros{
+	width:900px;
+	height:auto;
+	float:left;
+	margin-left:30px;
+	margin-top:20px;
+	margin-bottom:20px;
+	border:solid 1px #000;
+	background:#d9d8d8;	
+}
+
+#espacioforo{
+	height:60px;
+	background:#6c6b6b;
+	text-align:center;
+	}
+	
+#barra_foro{
+		background: url(../images/tituloventana.png) repeat-x;
+		height:23px;
+		text-align:left;
+		color:#FFF;
+		font-family:impact;
+		font-size:14px;
+		padding-left:20px;
+		}
+		
+#contenedor_foro{
+	height:auto;
+	background:#d9d8d8;	
+}
+
+#postuser{
+width:259px;
+height:150px;
+float:left;
+background:#eee;
+border-bottom:1px solid #000;
+border-top:1px solid #000;
+border-right:1px solid #000;
+text-align:center;
+}
+#postinside{
+width:210px;
+height:120px;
+margin-left:24.5px;
+margin-top:15px;
+}
+#posts{
+width:640px;
+height:150px;
+float:left;
+color:#FFF;
+background:#939393;
+border-top:1px solid #000;
+border-bottom:1px solid #000;
+}
+
+.reply{text-align:right;}
+
+
+.columna_game{
+	width:180px;
+	height:auto;
+	float:left;
+	margin-left:15px;
+	margin-top:20px;
+	margin-bottom:20px;
+  background:#6c6d6d;
+border:1px solid #000;
+	}
+.columna_rev{
+	width:500px;
+	height:auto;
+	float:left;
+	margin:20px 0 20px 15px;
+  border:1px solid #000;
+
+	}
+.subdescripcion{
+width:480px;
+background:#6c6d6d;
+color:#fff;
+font-weight:bold;
+float:left;
+font-size:14px;
+padding:10px 10px 10px 10px;
+font-family:arial;
+text-align:center;
+}
+
+.texto_review{
+background:#d9d7d8;
+color:#000;
+float:left;
+font-size:12px;
+font-family:arial;
+text-align:justify;
+padding:10px 10px 10px 10px;
+}
+#img_rev{
+width:500px;
+height:320px;
+background:#6c6d6d;
+float:left;
+}
+.img_margin{margin-top:10px;
+margin-left:10px;}
+
+.autor{
+width:480px;
+background:#eee;
+padding:5px 0 5px 20px;
+font-size:14px;
+font-weight:bold;
+float:left;
+border-top:1px solid #000;
+}
+
+.img_caja{
+text-align:center;
+padding:15px;
+border-bottom:4px solid #eee;
+}
+
+.center{text-align:center;
+}
+.titulo_game{
+font-family:impact;
+font-size:16px;
+text-align:center;
+color:#fff;
+}
+.infogame{
+font-family:arial;
+font-size:10px;
+font-weight:bold;
+color:#fff;
+
+}
+
+.consolasname{color:#fff;
+font-size:16px;
+font-family:impact; 
+text-align:center;}
+
+
+/* esto es de videos*/
+#contenedorvideo{
+width:200px;
+height:auto;
+border:solid 1px #000;
+float:left;
+margin:15px 0 0 7.5px;
+}
+.descripcion_video{
+background:#fff;
+height:30px;
+font-family:arial;
+font-size:12px;
+padding:5px 5px 5px 5px;
+border-top:1px solid #000;
+}
+.type_video{
+background:#6c6b6b;
+height:15px;
+font-family:arial;
+font-size:12px;
+color:white;
+padding:5px 5px 5px 5px;
+border-top:1px solid #000;
+font-weight:bold; 
+}
+
+/* user  */
+#title_user{
+	height:34px;
+	background: url(../images/tituloseccion.png) repeat-x;
+	text-align:left;
+	font-family: Impact;
+	font-size:20px;
+	padding:5px 5px 5px 10px;
+	text-align:left;
+	color:#FFF;
+	}
+  
+#userprofile{
+  width:auto;
+  height:auto;
+  float:left;
+  margin:25px 0 25px 25px;
+  border:solid 2px #eee;
+  padding:5px 5px 5px 5px;}
+  #userinfo{
+  width:auto;
+  height:auto;
+  float:left;
+  margin:25px 0 25px 0;
+  padding:5px 5px 5px 5px;}
+  
+  
+  .columna_ads2{
+	width:215px;
+	height:auto;
+	float:left;
+	margin-left:15px;
+	margin-top:20px;
+	margin-bottom:20px;
+
+	}
+  
+  
+  #menu_admin{
+    height:35px;
+  }
+ #popular_reviews2{
+	height:265px;
+	background:#d9d8d8;	
+  border:1px solid #000;
+} 
+ 
+
+.contenedor_der_latest{
+		height:52px;
+		width:255px;
+		float:left;
+		margin-top:10px;
+		margin-left:6px;
+  }
+#der_latest_titulo{
+				height:14px;
+				width:175px;
+				float:right;
+				text-align:left;
+				}
+    #descripcion_not_der{
+				height:29px;
+				width:175px;
+				margin-top:4px; 
+				float:right;
+				text-align:left;			
+				color:#000;
+        overflow:hidden;
+				}
+        
+        #swf267{
+          height:450px;
+          width:auto;
+          float:left;
+          border:solid 1px #000;
+          margin-top:20px;
+      }
+       #swf215{
+          height:500px;
+          width:auto;
+          float:left;
+          border:solid 1px #000;
+          margin-top:20px;
+      }

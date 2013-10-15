@@ -1,0 +1,69 @@
+
+<div class="columna_game">
+  <div id="titulo">GAME PREVIEW FOR:</div>
+  <div class="titulo_game">
+    <%= @preview.game.nombre_juego %>
+  </div>
+  <div class="img_caja">
+            <%@imagen = Game.find_by_id(@preview.game_id)%>
+  	        <%= link_to (image_tag @imagen.imagen_juego.url(:thumb)), @imagen %>
+  </div>
+  <div class="infogame">
+    <ul>
+      <li>Company:<%= @preview.game.compania %></li>
+  <li>Publisher:<%= @preview.game.distribuidor %></li>
+  <li>Genre:<%= @preview.game.genero %></li>
+  <li>Release date:<%= @preview.game.fecha_lanzamiento %></li>
+  <li>ESRB:<%= @preview.game.esrb %></li></br>
+</ul> 
+</div>
+</div>
+     <div class="columna_rev">
+                <div id="title_reviews"> <%=h @preview.titulo %></div>                
+                <div id class="subdescripcion">    
+                </br>
+  <%=h @preview.subdescripcion %> </br>
+  </br>
+</div>
+	<div id="separadorreviews"></div>
+
+
+<div class="texto_review">
+  <%=h @preview.previewp1 %>
+</div>
+  
+  <div id="img_rev">
+    <div class="img_margin">
+  <%= image_tag @preview.img_preview.url(:large) %>
+</div>
+</div>
+
+<div class="texto_review">
+  <%=h @preview.previewp2 %>
+</div>
+
+<div id="img_rev">
+    <div class="img_margin">
+  <%= image_tag @preview.img_preview2.url(:large) %>
+</div>
+</div>
+
+<div class="texto_review">
+  <%=h @preview.previewp3 %>
+</div>
+
+<div  class="autor">
+                Created by:
+  <%=h @preview.autor %>, posted at <%= @preview.created_at %>
+</div>
+
+
+<% link_to 'Edit', edit_preview_path(@preview) %> 
+<% link_to 'Back', previews_path %>
+              </div>
+              <div class="columna_ads2">
+                <div id="popular_reviews2">
+                <div id="titulo">GAME PREVIEW FOR:</div>
+              </div>
+              </div>                            
+              <div class="clear"></div>

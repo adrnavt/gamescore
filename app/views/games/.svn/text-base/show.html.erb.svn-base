@@ -1,0 +1,52 @@
+<%= link_to "crear review", new_game_review_path(@game) %>
+<p>
+  <%= image_tag @game.imagen_juego.url(:thumb) %>
+
+<p>
+  <b>Nombre juego:</b>
+  <%=h @game.nombre_juego %>
+</p>
+
+<p>
+  <b>Compania:</b>
+  <%=h @game.compania %>
+</p>
+
+<p>
+  <b>Distribuidor:</b>
+  <%=h @game.distribuidor %>
+</p>
+
+<p>
+  <b>Genero:</b>
+  <%=h @game.genero %>
+</p>
+
+<p>
+  <b>Fecha lanzamiento:</b>
+  <%=h @game.fecha_lanzamiento %>
+</p>
+
+<p>
+  <b>Esrb:</b>
+  <%=h @game.esrb %>
+</p>
+
+<p>
+  <b>Consola:</b>
+  <%=h @game.consola %>
+</p>
+
+<p>
+  <b>Gamescore:</b>
+  <%=h @game.gamescore %>
+</p>
+
+<p>
+  <b>Ratescore:</b>
+  <%=h @game.ratescore %>
+</p>
+
+
+<%= link_to 'Edit', edit_game_path(@game) %> |
+<%= link_to 'Back', games_path %>

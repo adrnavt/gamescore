@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/gamescore/!svn/ver/26/trunk/app/views/forums
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/gamescore/!svn/ver/19/trunk/app/views/forums/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/gamescore/!svn/ver/26/trunk/app/views/forums/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/gamescore/!svn/ver/19/trunk/app/views/forums/new.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/gamescore/!svn/ver/23/trunk/app/views/forums/show.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/gamescore/!svn/ver/19/trunk/app/views/forums/_form.html.erb
+END

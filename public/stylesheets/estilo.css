@@ -1,0 +1,34 @@
+body{
+	
+}
+h1{
+	color:red;
+}
+#imagen{
+	border:10px solid red;
+}
+.imagenes{
+	margin:0 auto;
+}
+
+#navegacion ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#navegacion ul li{
+	float:left;
+	margin:0 10px;
+}
+#navegacion{
+	border:1px solid green;
+}
+.clear{
+	clear:both;
+}
+
+#menu_admin{
+	width:100%;
+	height:50px;
+	background: #e8e8e8;
+}

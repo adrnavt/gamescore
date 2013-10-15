@@ -1,0 +1,11 @@
+<% form_for :email, :url => { :controller => "publica", :action => "send_mail"} do |f| %>
+	<%= f.label :name %><br/>
+	<%= f.text_field :name, :size => 50 %><br/>
+	<%= f.label :adress %><br/>
+	<%= f.text_field :adress, :size => 50 %><br/>
+	<%= f.label :subject %><br/>
+	<%= f.text_field :subject, :size => 50 %><br/>
+	<%= f.label :body %><br/>
+	<%= f.text_field :body, :rols => 10, :cols =>50 %><br/>
+	<%= submit_tag "Send Mail"%>
+<% end %>

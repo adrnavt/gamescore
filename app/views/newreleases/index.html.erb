@@ -1,0 +1,32 @@
+<div id="columna_reviews">
+	<div id="title_reviews">OUTCOMIGN GAMES</div>
+	<div id="search_reviews"></div>
+<% @newrelease.each do |newrelease| %>
+ <div id="contenedor_list_review">
+		<div id="imagen_review">
+			<%@imagen = Game.find_by_id(newrelease.game_id)%>
+  	        <%= link_to (image_tag @imagen.imagen_juego.url(:thumb)), @imagen %>
+		</div>
+	<div id="info_review">
+		<%@titulo = Game.find_by_id(newrelease.game_id)%>
+				<div class="tituloreview"><%=h @titulo.nombre_juego %></div><br />
+				<%@fecha = Game.find_by_id(newrelease.game_id)%>
+				<div class="release">RELEASE DATE: <%=h @fecha.fecha_lanzamiento %></div><br />
+    			<div class="descripcionreview"><%=h newrelease.descripcion %></div>
+			<% if admin? %> <%= link_to 'Edit', edit_newrelease_path(newrelease) %>
+			    <%= link_to 'Destroy', newrelease, :confirm => 'Are you sure?', :method => :delete %>
+			    <% end %>
+		</div>
+	</div>
+	<div id="separadorreviews"></div>
+	<% end %>
+<div class="gamescore_pagination">
+  <%= will_paginate @newrelease, :container => true, :prev_label => "<< Prev", :next_label => "Next >>" %>
+  </div>
+</div>
+<div id="columna_ads">
+	<div id="popular_reviews">
+		<div id="titulo">GAMES ON THE WAY</div>
+	</div>	
+</div>
+<div class="clear"></div>

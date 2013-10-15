@@ -1,0 +1,9 @@
+one:
+  kewywords: MyString
+  categoria_id: 1
+  consola_id: 1
+
+two:
+  kewywords: MyString
+  categoria_id: 1
+  consola_id: 1

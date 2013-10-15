@@ -1,0 +1,10 @@
+<div id="columna_foros">
+  <div id="title_user">JOIN NOW TO GAMESCORE</div>
+
+<% form_for @user, :html => {:multipart => true} do |f| %>
+	<%= f.error_messages :header_message => "Please try again", :message => "There are several fields with errors:" %>
+	<%= render :partial => "form", :object => f %>    
+	<%= f.submit "Save Changes" %>
+<% end %>
+</div>
+<div class="clear"></div>

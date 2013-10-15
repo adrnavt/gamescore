@@ -1,0 +1,40 @@
+<%= stylesheet_link_tag "videobox" %>
+<%= javascript_include_tag "mootools.js", "swfobject.js", "videobox.js" %>
+<p>
+  <b>Titulo video:</b>
+  <%=h @video.titulo_video %>
+</p>
+
+<p>
+  <b><a href="http://www.youtube.com/watch?v=jlACgYHtWCI" rel="vidbox" title="Dragon age 2">the video</a></b>
+  <%= link_to (image_tag @video.img_video.url(:medium)),  @video.url, :rel=>"vidbox", :title=>"#{@video.titulo_video}"  %>
+</p>
+
+<p>
+  <b>Descripcion:</b>
+  <%=h @video.descripcion %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%=h @video.url %>
+</p>
+
+<p>
+  <b>Game:</b>
+  <%=h @video.game_id %>
+</p>
+
+<p>
+  <b>Categoriav:</b>
+  <%=h @video.categoriav_id %>
+</p>
+
+<p>
+  <b>Consola:</b>
+  <%=h @video.consola_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_video_path(@video) %> |
+<%= link_to 'Back', videos_path %>

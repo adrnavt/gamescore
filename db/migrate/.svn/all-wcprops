@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/gamescore/!svn/ver/27/trunk/db/migrate
+END
+20110324005730_add_foreing_to_topics.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/gamescore/!svn/ver/19/trunk/db/migrate/20110324005730_add_foreing_to_topics.rb
+END
+20110330082141_create_ratings.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/gamescore/!svn/ver/27/trunk/db/migrate/20110330082141_create_ratings.rb
+END
+20110314192220_add_attachments_imagen_to_banner.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/gamescore/!svn/ver/19/trunk/db/migrate/20110314192220_add_attachments_imagen_to_banner.rb
+END
+20110324005055_create_posts.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/gamescore/!svn/ver/19/trunk/db/migrate/20110324005055_create_posts.rb
+END
+20110324004829_create_topics.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/gamescore/!svn/ver/19/trunk/db/migrate/20110324004829_create_topics.rb
+END
+20101111192846_create_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/gamescore/!svn/ver/19/trunk/db/migrate/20101111192846_create_users.rb
+END
+20110317202636_create_mensajes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/gamescore/!svn/ver/19/trunk/db/migrate/20110317202636_create_mensajes.rb
+END
+20110324004706_create_forums.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/gamescore/!svn/ver/19/trunk/db/migrate/20110324004706_create_forums.rb
+END
+20110330055530_add_attachments_img_review1_to_review.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/gamescore/!svn/ver/27/trunk/db/migrate/20110330055530_add_attachments_img_review1_to_review.rb
+END
+20110324005848_add_foreing_to_posts.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/gamescore/!svn/ver/19/trunk/db/migrate/20110324005848_add_foreing_to_posts.rb
+END
+20110330054317_create_reviews.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/gamescore/!svn/ver/27/trunk/db/migrate/20110330054317_create_reviews.rb
+END
+20110330055544_add_attachments_img_review2_to_review.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/gamescore/!svn/ver/27/trunk/db/migrate/20110330055544_add_attachments_img_review2_to_review.rb
+END
+20110324012842_add_user_to_topics.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/gamescore/!svn/ver/19/trunk/db/migrate/20110324012842_add_user_to_topics.rb
+END
+20110228202706_agregarimagenesalusuario.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/gamescore/!svn/ver/19/trunk/db/migrate/20110228202706_agregarimagenesalusuario.rb
+END
+20110330014110_add_attachments_imagen_juego_to_game.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/gamescore/!svn/ver/27/trunk/db/migrate/20110330014110_add_attachments_imagen_juego_to_game.rb
+END
+20110330010943_create_games.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/gamescore/!svn/ver/27/trunk/db/migrate/20110330010943_create_games.rb
+END
+20110324012802_add_user_to_posts.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/gamescore/!svn/ver/19/trunk/db/migrate/20110324012802_add_user_to_posts.rb
+END
+20110314192043_create_banners.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/gamescore/!svn/ver/19/trunk/db/migrate/20110314192043_create_banners.rb
+END

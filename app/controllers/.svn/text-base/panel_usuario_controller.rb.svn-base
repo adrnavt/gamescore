@@ -1,0 +1,5 @@
+class PanelUsuarioController < ApplicationController
+  def index
+  end
+
+end

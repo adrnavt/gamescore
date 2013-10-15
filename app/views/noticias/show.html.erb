@@ -1,0 +1,43 @@
+<p>
+  <b>Titulo:</b>
+  <%=h @noticia.titulo %>
+</p>
+
+<p>
+  <b>Img noticia:</b>
+  <%= image_tag @noticia.img_noticia.url(:large) %>
+</p>
+
+<p>
+  <b>Descripcion img:</b>
+  <%=h @noticia.descripcion_img %>
+</p>
+
+<p>
+  <b>Autor:</b>
+  <%=h @noticia.autor %>
+</p>
+
+<p>
+  <b>Lugar:</b>
+  <%=h @noticia.lugar %>
+</p>
+
+<p>
+  <b>Nota:</b>
+  <%=h @noticia.nota %>
+</p>
+
+<p>
+  <b>Publisher:</b>
+  <%=h @noticia.publisher %>
+</p>
+
+<p>
+  <b>Consola:</b>
+  <%=h @noticia.consola_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_noticia_path(@noticia) %> |
+<%= link_to 'Back', noticias_path %>

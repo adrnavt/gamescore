@@ -1,0 +1,37 @@
+<h1>Editing video</h1>
+
+<% form_for @video, :html => {:multipart => true} do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :titulo_video %><br />
+    <%= f.text_field :titulo_video %>
+  </p>
+ <p>imagen:<%= f.file_field :img_video %></p>
+  <p>
+    <%= f.label :descripcion %><br />
+    <%= f.text_area :descripcion %>
+  </p>
+  <p>
+    <%= f.label :url %><br />
+    <%= f.text_field :url %>
+  </p>
+  <p>
+    <%= f.label :game_id %><br />
+    <%= f.text_field :game_id %>
+  </p>
+  <p>
+    <%= f.label :categoriav_id %><br />
+    <%= f.text_field :categoriav_id %>
+  </p>
+  <p>
+    <%= f.label :consola_id %><br />
+    <%= f.text_field :consola_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @video %> |
+<%= link_to 'Back', videos_path %>

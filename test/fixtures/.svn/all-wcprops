@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/gamescore/!svn/ver/27/trunk/test/fixtures
+END
+categorias.yml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/gamescore/!svn/ver/19/trunk/test/fixtures/categorias.yml
+END
+topics.yml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/gamescore/!svn/ver/19/trunk/test/fixtures/topics.yml
+END
+users.yml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/gamescore/!svn/ver/19/trunk/test/fixtures/users.yml
+END
+reviews.yml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/gamescore/!svn/ver/27/trunk/test/fixtures/reviews.yml
+END
+mensajes.yml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/gamescore/!svn/ver/19/trunk/test/fixtures/mensajes.yml
+END
+banners.yml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/gamescore/!svn/ver/19/trunk/test/fixtures/banners.yml
+END
+posts.yml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/gamescore/!svn/ver/19/trunk/test/fixtures/posts.yml
+END
+noticias.yml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/gamescore/!svn/ver/19/trunk/test/fixtures/noticias.yml
+END
+forums.yml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/gamescore/!svn/ver/19/trunk/test/fixtures/forums.yml
+END
+games.yml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/gamescore/!svn/ver/27/trunk/test/fixtures/games.yml
+END
+juegos.yml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/gamescore/!svn/ver/27/trunk/test/fixtures/juegos.yml
+END

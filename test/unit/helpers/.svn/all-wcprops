@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/gamescore/!svn/ver/27/trunk/test/unit/helpers
+END
+publica_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/gamescore/!svn/ver/19/trunk/test/unit/helpers/publica_helper_test.rb
+END
+categorias_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/gamescore/!svn/ver/19/trunk/test/unit/helpers/categorias_helper_test.rb
+END
+rating_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/gamescore/!svn/ver/27/trunk/test/unit/helpers/rating_helper_test.rb
+END
+reviews_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/gamescore/!svn/ver/27/trunk/test/unit/helpers/reviews_helper_test.rb
+END
+mensajes_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/gamescore/!svn/ver/19/trunk/test/unit/helpers/mensajes_helper_test.rb
+END
+panel_usuario_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/gamescore/!svn/ver/19/trunk/test/unit/helpers/panel_usuario_helper_test.rb
+END
+privada_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/gamescore/!svn/ver/19/trunk/test/unit/helpers/privada_helper_test.rb
+END
+panel_admin_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/gamescore/!svn/ver/19/trunk/test/unit/helpers/panel_admin_helper_test.rb
+END
+banners_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/gamescore/!svn/ver/19/trunk/test/unit/helpers/banners_helper_test.rb
+END
+noticias_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/gamescore/!svn/ver/19/trunk/test/unit/helpers/noticias_helper_test.rb
+END
+games_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/gamescore/!svn/ver/27/trunk/test/unit/helpers/games_helper_test.rb
+END
+juegos_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/gamescore/!svn/ver/27/trunk/test/unit/helpers/juegos_helper_test.rb
+END

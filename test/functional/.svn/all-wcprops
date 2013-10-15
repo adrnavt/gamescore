@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/gamescore/!svn/ver/27/trunk/test/functional
+END
+forums_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/gamescore/!svn/ver/19/trunk/test/functional/forums_controller_test.rb
+END
+user_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/gamescore/!svn/ver/19/trunk/test/functional/user_controller_test.rb
+END
+publica_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/gamescore/!svn/ver/19/trunk/test/functional/publica_controller_test.rb
+END
+categorias_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/gamescore/!svn/ver/19/trunk/test/functional/categorias_controller_test.rb
+END
+reviews_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/gamescore/!svn/ver/27/trunk/test/functional/reviews_controller_test.rb
+END
+rating_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/gamescore/!svn/ver/27/trunk/test/functional/rating_controller_test.rb
+END
+privada_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/gamescore/!svn/ver/19/trunk/test/functional/privada_controller_test.rb
+END
+banners_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/gamescore/!svn/ver/19/trunk/test/functional/banners_controller_test.rb
+END
+juegos_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/gamescore/!svn/ver/27/trunk/test/functional/juegos_controller_test.rb
+END
+games_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/gamescore/!svn/ver/27/trunk/test/functional/games_controller_test.rb
+END
+topics_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/gamescore/!svn/ver/19/trunk/test/functional/topics_controller_test.rb
+END
+mensajes_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/gamescore/!svn/ver/19/trunk/test/functional/mensajes_controller_test.rb
+END
+panel_usuario_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/gamescore/!svn/ver/19/trunk/test/functional/panel_usuario_controller_test.rb
+END
+panel_admin_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/gamescore/!svn/ver/19/trunk/test/functional/panel_admin_controller_test.rb
+END
+posts_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/gamescore/!svn/ver/19/trunk/test/functional/posts_controller_test.rb
+END
+noticias_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/gamescore/!svn/ver/19/trunk/test/functional/noticias_controller_test.rb
+END
